@@ -1,0 +1,118 @@
+Model Comparison (Including Ensemble):
+          Total Matches  Average Score
+faiss              2560          0.852
+semantic           2559          0.852
+tfidf              7105          0.859
+bert               2151          0.861
+ensemble           3295          0.848
+
+Model Agreement Matrix (Including Ensemble):
+             faiss  semantic     tfidf      bert  ensemble
+faiss     1.000000  0.999609  0.030840  0.429918  0.777372
+semantic  0.999609  1.000000  0.030843  0.429614  0.777068
+tfidf     0.030840  0.030843  1.000000  0.025837  0.029217
+bert      0.429918  0.429614  0.025837  1.000000  0.652478
+ensemble  0.777372  0.777068  0.029217  0.652478  1.000000
+
+Common to All Models (Including Ensemble):
+Matches found by all models: 227
+Overall agreement ratio: 2.25%
+
+Pairwise Comparisons with Ensemble:
+
+faiss_vs_semantic:
+Common matches: 2555
+Agreement ratio: 99.96%
+
+faiss_vs_tfidf:
+Common matches: 289
+Agreement ratio: 3.08%
+
+faiss_vs_bert:
+Common matches: 1414
+Agreement ratio: 42.99%
+
+faiss_vs_ensemble:
+Common matches: 2556
+Agreement ratio: 77.74%
+
+semantic_vs_tfidf:
+Common matches: 289
+Agreement ratio: 3.08%
+
+semantic_vs_bert:
+Common matches: 1413
+Agreement ratio: 42.96%
+
+semantic_vs_ensemble:
+Common matches: 2555
+Agreement ratio: 77.71%
+
+tfidf_vs_bert:
+Common matches: 233
+Agreement ratio: 2.58%
+
+tfidf_vs_ensemble:
+Common matches: 295
+Agreement ratio: 2.92%
+
+bert_vs_ensemble:
+Common matches: 2146
+Agreement ratio: 65.25%
+
+Ensemble Model Performance:
+Total matches found by ensemble: 3295
+Average confidence score: 0.848
+Category match rate: 0.00%
+
+Generating Catalogues for Each Model:
+
+Processing FAISS Model Catalogue:
+Matched Items:  2560
+Data1 Items:  29781
+Data2 Items:  73546
+Generating Unmatched Unique Data
+Unique Items:  95056
+Generating Master Catalogue
+Master Catalogue Items:  97616
+Faiss Catalogue saved with 97616 entries
+
+Processing SEMANTIC Model Catalogue:
+Matched Items:  2559
+Data1 Items:  29782
+Data2 Items:  73547
+Generating Unmatched Unique Data
+Unique Items:  95058
+Generating Master Catalogue
+Master Catalogue Items:  97617
+Semantic Catalogue saved with 97617 entries
+
+Processing TFIDF Model Catalogue:
+Matched Items:  7105
+Data1 Items:  28156
+Data2 Items:  75164
+Generating Unmatched Unique Data
+Unique Items:  94818
+Generating Master Catalogue
+Master Catalogue Items:  101923
+Tfidf Catalogue saved with 101923 entries
+
+Processing BERT Model Catalogue:
+Matched Items:  2151
+Data1 Items:  30173
+Data2 Items:  73884
+Generating Unmatched Unique Data
+Unique Items:  95575
+Generating Master Catalogue
+Master Catalogue Items:  97726
+Bert Catalogue saved with 97726 entries
+
+Processing ENSEMBLE Model Catalogue:
+Matched Items:  3295
+Data1 Items:  29139
+Data2 Items:  72874
+Generating Unmatched Unique Data
+Unique Items:  94230
+Generating Master Catalogue
+Master Catalogue Items:  97525
+Ensemble Catalogue saved with 97525 entries

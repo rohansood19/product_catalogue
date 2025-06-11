@@ -13,6 +13,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 from transformers import AutoTokenizer, AutoModel
 import torch.nn.functional as F
 
+try:
+    mp.set_start_method("fork", force=True)
+except RuntimeError:
+    pass  # Already set
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+faiss.omp_set_num_threads(1)
 
 class ModelFaiss:
     

@@ -1,0 +1,8 @@
+pandas
+numpy
+faiss-cpu
+torch
+tqdm
+sentence-transformers
+scikit-learn
+boto3

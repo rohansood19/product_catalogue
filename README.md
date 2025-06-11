@@ -6,6 +6,8 @@ cd generative-product-catalogue-solution
 conda create --name myenv python=3.10
 conda activate myenv
 pip install -r requirements.txt
+pip install torch --upgrade --index-url https://download.pytorch.org/whl/cpu
+rm -rf ~/.cache/huggingface
 ```
 
 # Text Deduplication and Description Generator

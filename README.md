@@ -30,11 +30,14 @@ This repository contains a pipeline for loading, processing, deduplicating, and 
 ### 3. Run Test Script
 
 ```bash
-python test.py
+python test.py > results.json
 ```
 
 This will load sample data, process it, apply deduplication, generate descriptions, and output evaluation metrics.
+You can verify all the terminal outputs in results.json or else just run: 
 
+```bash
+python test.py
+```
 
-
-
+This will give you the terminal prints.
